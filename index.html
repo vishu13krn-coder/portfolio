@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium portfolio of Vishwas K, a Data Analyst focused on analytics, visualization, machine learning, Python, SQL, and business intelligence.">
+  <meta name="theme-color" content="#050505">
+  <meta property="og:title" content="Vishwas K | Data Analyst Portfolio">
+  <meta property="og:description" content="Data analytics, machine learning, and visualization projects by Vishwas K.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/svg/portfolio-preview.svg">
+  <title>Vishwas K | Data Analyst Portfolio</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2305080f'/%3E%3Ctext x='50%25' y='56%25' dominant-baseline='middle' text-anchor='middle' font-family='Inter,Arial' font-size='24' font-weight='800' fill='%2364D2FF'%3EVK%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="loader" aria-label="Loading portfolio">
+    <div class="loader-mark">VK</div>
+    <div class="loader-track"><span></span></div>
+    <p>Preparing insights</p>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-dot" aria-hidden="true"></div>
+  <div class="cursor-ring" aria-hidden="true"></div>
+  <div class="spotlight" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#home" aria-label="Vishwas K home">VK</a>
+      <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme">
+        <span class="theme-icon">◐</span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <canvas id="particle-canvas" aria-hidden="true"></canvas>
+      <div class="ambient-field" aria-hidden="true"></div>
+      <div class="section-inner hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal">Analytics Portfolio</p>
+          <h1 class="reveal">Hi, I'm <span>Vishwas K</span></h1>
+          <div class="typing-line reveal" aria-live="polite">
+            <span id="typed-text">Data Analyst</span><span class="typing-caret"></span>
+          </div>
+          <p class="hero-description reveal">I transform raw data into meaningful insights using analytics, visualization, and machine learning.</p>
+          <div class="hero-actions reveal">
+            <a class="btn btn-primary" href="#projects">View Projects</a>
+            <a class="btn btn-ghost" href="assets/Vishwas-K-Resume.html" download>Download Resume</a>
+            <a class="btn btn-soft" href="#contact">Contact Me</a>
+          </div>
+        </div>
+        <div class="hero-visual reveal" aria-label="Data analytics illustration">
+          <svg viewBox="0 0 620 520" role="img" aria-labelledby="heroSvgTitle">
+            <title id="heroSvgTitle">Modern analytics dashboard illustration</title>
+            <defs>
+              <linearGradient id="panelGradient" x1="0%" x2="100%" y1="0%" y2="100%">
+                <stop offset="0%" stop-color="#64D2FF" stop-opacity=".95"/>
+                <stop offset="55%" stop-color="#0A84FF" stop-opacity=".9"/>
+                <stop offset="100%" stop-color="#7C5CFF" stop-opacity=".72"/>
+              </linearGradient>
+              <filter id="glow" x="-40%" y="-40%" width="180%" height="180%">
+                <feGaussianBlur stdDeviation="16" result="blur"/>
+                <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <path class="svg-ribbon" d="M71 339 C111 168 233 71 391 106 C529 137 572 261 513 365 C445 485 244 490 150 411 C104 372 59 389 71 339Z" fill="url(#panelGradient)" opacity=".15"/>
+            <rect class="svg-float" x="104" y="86" width="392" height="276" rx="32" fill="rgba(255,255,255,.08)" stroke="rgba(255,255,255,.18)"/>
+            <rect x="137" y="126" width="130" height="22" rx="11" fill="#FFFFFF" opacity=".86"/>
+            <rect x="137" y="165" width="302" height="12" rx="6" fill="#FFFFFF" opacity=".18"/>
+            <rect x="137" y="190" width="228" height="12" rx="6" fill="#FFFFFF" opacity=".12"/>
+            <g class="chart-bars">
+              <rect x="151" y="267" width="34" height="58" rx="9" fill="#64D2FF"/>
+              <rect x="205" y="224" width="34" height="101" rx="9" fill="#0A84FF"/>
+              <rect x="259" y="245" width="34" height="80" rx="9" fill="#64D2FF"/>
+              <rect x="313" y="199" width="34" height="126" rx="9" fill="#0A84FF"/>
+              <rect x="367" y="173" width="34" height="152" rx="9" fill="#64D2FF"/>
+            </g>
+            <path class="trend-line" d="M151 237 L222 204 L286 217 L348 172 L417 143" fill="none" stroke="#fff" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)"/>
+            <circle cx="417" cy="143" r="13" fill="#fff"/>
+            <g class="mini-card">
+              <rect x="366" y="326" width="170" height="94" rx="24" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.18)"/>
+              <text x="395" y="370" fill="#fff" font-size="22" font-family="Inter" font-weight="800">94%</text>
+              <text x="395" y="397" fill="#A1A1AA" font-size="14" font-family="Inter">Model accuracy</text>
+            </g>
+            <g class="mini-card two">
+              <rect x="67" y="332" width="168" height="91" rx="24" fill="rgba(255,255,255,.1)" stroke="rgba(255,255,255,.18)"/>
+              <text x="94" y="374" fill="#fff" font-size="22" font-family="Inter" font-weight="800">SQL</text>
+              <text x="94" y="399" fill="#A1A1AA" font-size="14" font-family="Inter">Insight queries</text>
+            </g>
+          </svg>
+        </div>
+      </div>
+      <a class="scroll-indicator" href="#about" aria-label="Scroll to about"><span></span></a>
+    </section>
+
+    <section class="section" id="about">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">About Me</p>
+          <h2>Turning messy data into confident decisions.</h2>
+        </div>
+        <div class="about-layout">
+          <article class="glass-panel profile-card reveal">
+            <div class="avatar">VK</div>
+            <h3>Vishwas K</h3>
+            <p>Aspiring Data Analyst with a sharp interest in business intelligence, Python workflows, and machine learning experiments.</p>
+          </article>
+          <article class="glass-panel about-copy reveal">
+            <p>I'm Vishwas K, an aspiring Data Analyst passionate about transforming raw data into actionable insights. I enjoy solving business problems using data analytics, machine learning, and visualization. I'm continuously learning modern analytics tools and building projects that demonstrate practical skills.</p>
+            <div class="info-grid">
+              <div><span>Focus</span><strong>Analytics and ML</strong></div>
+              <div><span>Education</span><strong>Computer Science</strong></div>
+              <div><span>Workflow</span><strong>Python, SQL, BI</strong></div>
+              <div><span>Mindset</span><strong>Learn, build, iterate</strong></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Skills</p>
+          <h2>A focused toolkit for analysis, modeling, and presentation.</h2>
+        </div>
+        <div class="skills-grid">
+          <article class="skill-card reveal"><h3>Programming</h3><div class="chips"><span>Python</span><span>SQL</span><span>JavaScript</span><span>HTML</span><span>CSS</span></div></article>
+          <article class="skill-card reveal"><h3>Data Analytics</h3><div class="chips"><span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span><span>Excel</span><span>Power BI</span></div></article>
+          <article class="skill-card reveal"><h3>Machine Learning</h3><div class="chips"><span>Scikit-learn</span><span>Classification</span><span>Regression</span><span>Data Cleaning</span><span>Feature Engineering</span></div></article>
+          <article class="skill-card reveal"><h3>Tools</h3><div class="chips"><span>Git</span><span>GitHub</span><span>VS Code</span><span>Jupyter Notebook</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Featured Projects</p>
+          <h2>Machine learning projects built around practical problems.</h2>
+        </div>
+        <div class="projects-grid">
+          <article class="project-card reveal">
+            <div class="project-media media-mail" aria-hidden="true"></div>
+            <div class="project-content">
+              <h3>Spam Mail Classifier</h3>
+              <p>Built using Naive Bayes to classify emails into Spam or Ham.</p>
+              <div class="badges"><span>Python</span><span>Pandas</span><span>Scikit-learn</span></div>
+              <div class="project-actions"><a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="Spam Mail Classifier GitHub">GitHub</a><button type="button" aria-label="Spam Mail Classifier live demo coming soon">Live Demo</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media media-diamond" aria-hidden="true"></div>
+            <div class="project-content">
+              <h3>Diamond Price Prediction</h3>
+              <p>Predicts diamond prices using Linear Regression.</p>
+              <div class="badges"><span>Python</span><span>Regression</span><span>EDA</span></div>
+              <div class="project-actions"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><button type="button" aria-label="Diamond Price Prediction live demo coming soon">Live Demo</button></div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <div class="project-media media-loan" aria-hidden="true"></div>
+            <div class="project-content">
+              <h3>Loan Prediction</h3>
+              <p>Machine learning model to predict loan approval.</p>
+              <div class="badges"><span>Classification</span><span>Scikit-learn</span><span>Cleaning</span></div>
+              <div class="project-actions"><a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a><button type="button" aria-label="Loan Prediction live demo coming soon">Live Demo</button></div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-inner">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Timeline</p>
+          <h2>Education and growth path.</h2>
+        </div>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div class="glass-panel">
+              <p>Education</p>
+              <h3>Bachelor of Engineering</h3>
+              <span>Computer Science</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section achievements" aria-label="Achievements">
+      <div class="section-inner stats-grid">
+        <div class="stat reveal"><strong data-count="12">0</strong><span>Projects</span></div>
+        <div class="stat reveal"><strong data-count="6">0</strong><span>Certifications</span></div>
+        <div class="stat reveal"><strong data-count="8">0</strong><span>Machine Learning Models</span></div>
+        <div class="stat reveal"><strong data-count="900">0</strong><span>Coding Hours</span></div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-inner contact-grid">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let's turn a dataset into a story worth acting on.</h2>
+        </div>
+        <article class="glass-panel contact-card reveal">
+          <div class="contact-art" aria-hidden="true">
+            <span></span><span></span><span></span>
+          </div>
+          <a class="contact-button" href="mailto:vishwask@example.com">Email</a>
+          <a class="contact-button" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="contact-button" href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Vishwas K</p>
+    <p>Built with HTML CSS JavaScript</p>
+  </footer>
+
+  <button class="back-to-top" type="button" aria-label="Back to top">↑</button>
+
+  <script src="js/particles.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>

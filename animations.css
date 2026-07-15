@@ -1,0 +1,51 @@
+@keyframes loadbar { from { width: 0; } to { width: 100%; } }
+@keyframes blink { 50% { opacity: 0; } }
+@keyframes ripple { to { opacity: 0; transform: translate(-50%, -50%) scale(18); } }
+@keyframes scrollCue {
+  0% { opacity: 0; transform: translate(-50%, 0); }
+  35% { opacity: 1; }
+  100% { opacity: 0; transform: translate(-50%, 16px); }
+}
+@keyframes fieldShift {
+  from { transform: translate3d(-4%, -2%, 0) rotate(0deg) scale(1); }
+  to { transform: translate3d(4%, 4%, 0) rotate(18deg) scale(1.08); }
+}
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-18px); }
+}
+@keyframes dashFlow { to { stroke-dashoffset: -220; } }
+@keyframes dataPulse {
+  0%, 100% { transform: scaleX(.28); opacity: .25; }
+  50% { transform: scaleX(1); opacity: .88; }
+}
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity .72s ease, transform .72s ease;
+}
+.reveal.visible { opacity: 1; transform: translateY(0); }
+.svg-ribbon { animation: floatY 6s ease-in-out infinite; }
+.svg-float, .mini-card { animation: floatY 5.5s ease-in-out infinite; }
+.mini-card.two { animation-delay: .6s; }
+.trend-line {
+  stroke-dasharray: 16 18;
+  animation: dashFlow 7s linear infinite;
+}
+.chart-bars rect { transform-origin: bottom; animation: barRise 2.5s ease-in-out infinite alternate; }
+.chart-bars rect:nth-child(2) { animation-delay: .15s; }
+.chart-bars rect:nth-child(3) { animation-delay: .3s; }
+.chart-bars rect:nth-child(4) { animation-delay: .45s; }
+.chart-bars rect:nth-child(5) { animation-delay: .6s; }
+@keyframes barRise {
+  from { transform: scaleY(.72); opacity: .72; }
+  to { transform: scaleY(1); opacity: 1; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+  }
+}
